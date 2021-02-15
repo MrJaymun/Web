@@ -34,3 +34,110 @@ margin-bottom: -1px;
 }
 
 .ontouch li:hover > .workerslist {display: block;}
+
+.share {
+    width: 160px;
+    
+    padding: 10px;
+    padding-left: 20px;
+  
+    background-color: #ecf0f1;
+  }
+  
+  
+  .social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: #bdc3c7 url("social.png") no-repeat;
+  }
+
+  .vkontakte {
+
+    background-position: 0 0;
+  }
+  
+  .facebook {
+
+    background-position: -40px 0;
+  }
+  
+  .twitter {
+    background-position: -80px 0;
+  }
+
+  .pages {
+    width: 260px;
+   
+    padding: 10px;
+  
+    white-space: nowrap;
+  
+    background-color: #ecf0f1;
+  }
+  
+  .pages a,
+  .pages span {
+    display: inline-block;
+    min-width: 20px;
+    height: 40px;
+    padding: 0 10px;
+  
+    font-weight: bold;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  
+    background-color: #95a5a6;
+  }
+  
+  .pages .prev {
+    margin-right: 20px;
+  
+    text-indent: -1000px;
+  
+    background-image: url("arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  
+  .pages .next {
+    margin-left: 20px;
+  
+    text-indent: -1000px;
+  
+    background-image: url("arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+  }
+  
+  .pages .current {
+    background-color: #1515ff;
+  }
+  
+  .pages .disabled {
+    opacity: 0.3;
+  }
+  
+  .pages a:hover {
+    background-color: #8b00ff;
+  }
+
+  form{
+      margin-top: 20px;
+    
+  }
+  textarea{
+      width: 500px;
+      height: 100px;
+  }
+  .submit{
+    margin-left: 5px;
+    background-color: #0fc;
+    width: 100px;
+    height: 30px;
+  }
