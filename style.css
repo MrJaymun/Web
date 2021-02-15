@@ -1,0 +1,36 @@
+.mainmenu{
+    width: 200px;
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    background-color: #fff;
+}
+  
+.mainmenu a {
+display: block;
+padding: 8px 14px;
+color: #08c;
+text-decoration: none;
+border: 1px solid #000;
+margin-bottom: -1px;
+}
+
+.mainmenu a:hover {
+    background-color: #333;
+}
+
+.horizontal{
+    display: flex;
+}
+.horizontal a{
+    width: 100px;
+    text-align: center;
+}
+
+.workerslist{
+    
+    display: none;
+   
+}
+
+.ontouch li:hover > .workerslist {display: block;}
