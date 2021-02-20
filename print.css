@@ -1,0 +1,47 @@
+@media print {
+     @page {
+    
+        margin-left: 3cm;
+        margin-right: 1cm; 
+        margin-top: 2cm;
+        margin-bottom: 2cm; 
+        
+        }
+
+        .text{
+        text-align: justify;
+        font-size: 18px;
+        text-indent: 1cm;
+        page-break-after: always;
+        page-break-inside: avoid;
+        }
+
+        /*
+        Я рассмотрел описанные в приложении свойства, добавил 2 page-break выше данного комментария,
+        однако применение всех действий не было осуществлено в связи с тем что страница небольшая и 
+        многие из предложенных команд применять нет смысла
+        */
+
+        /*
+        То что всплывает gif я учел, в любом случае на 2 страницах помещается
+        */
+       
+        .upmenu{
+            display: flex;
+        }
+        .creator{
+            width: 14cm;
+            height: 17.5cm;
+        }
+        .name{
+           margin-top: 0.3cm;
+            font-size: 24px;
+        }
+        .github{
+            margin-top: 0.2cm;
+            font-size: 20px;
+        }
+    
+    }
+
+       

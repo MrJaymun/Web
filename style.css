@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    margin: 10px;
+   width: 20%;
+    height: 30px;
+    background-color: #fafafa;
+    border: 3px solid blue;
+    text-decoration: none;
+    color: blue;
+    padding-top: 10px;
+}
+.upmenu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px 50px;
+    text-indent: 50px;
+    text-align: justify;
+}
+.text p:hover{
+    background-color: cyan;
+    border: 1px solid black;
+}
+.creator{
+   display: block;
+   margin: auto;
+   width: 600px;
+   height: 700px;
+}
+.name{
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -3px;
+}
+
+.jquery{
+    display: block;
+   margin: auto;
+   text-align: center;
+}
+
+.github{
+    display: block;
+   margin: auto;
+   text-align: center;
+   font-size: 24px;
+   font-weight: 900;
+}
+
+@media(max-width: 1000px){
+    .upmenu{
+        display: block;
+    }
+    .button{
+        width: 80%;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .text{
+        text-align: center;
+        text-indent: 20px;
+        padding: 5px 20px;
+    }
+    
+    
+}
+@media(max-width: 600px){
+    .creator{
+    width: 320px;
+    height: 400px;
+    }
+    .github{
+        font-size: 16px;
+    }
+}
+
+
