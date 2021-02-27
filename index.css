@@ -1,0 +1,53 @@
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+  
+}
+.menu{
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+  
+    border: black solid 3px;
+     background-color: lightblue;
+}
+
+
+.logo{
+    margin: 0 auto;
+   background-color: cornflowerblue;
+    text-align: center;
+    border-bottom: black solid 3px;
+}
+
+.lead{
+    margin: 0 auto;
+  
+    text-align: center;
+   
+}
+
+
+
+.container form {
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    
+}
+
+.button{
+    font-size: 20px;
+    color: blue;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    
+}
