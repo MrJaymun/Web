@@ -1,7 +1,7 @@
 let canvas = document.getElementById("canvas");
 let resultElement = document.getElementById("result");
 let ctx = canvas.getContext("2d");
-let state = {
+var state = {
     score: 0
 }
 var isGame = false;
@@ -176,14 +176,25 @@ class Fish extends Image {
 class LeaderBoardUnit{
     constructor(){
         this.name = " ";
-        this.value = -1;
+        this.value = 999999;
     }
 }
 
-let leaderBoard = {}
-for (var i = 0; i < 11; i++) {
-    leaderBoard[i] = new LeaderBoardUnit();
-}
+
+
+var leaderBoard = [
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 },
+    { name: '', value: 999999 }
+  ];
 
 
 
@@ -216,7 +227,9 @@ class Form {
  
 
 new Form(document.forms["username"], (value) => {
-    leaderBoard[10].name = value;
+    resultElement.innerHTML = 0;
+    state.score = 0;
+    leaderBoard[10].name = value.nameUser;
     console.log(value);
     console.log(leaderBoard[10].name);
     isGame = true;
@@ -225,7 +238,7 @@ new Form(document.forms["username"], (value) => {
    
     if(isGame){
         let bg = new Image();
-        
+        document.getElementsByClassName('canvas')[0].style.display = "block";
       
         
         
@@ -253,16 +266,87 @@ new Form(document.forms["username"], (value) => {
         
             canvas.onclick = function() {
                 if(state.score > 100){
+                    resultElement.innerHTML = 0;
                     document.getElementsByClassName('menu')[0].style.display = "block";
-                    document.getElementsByClassName('one')[0].style.display = "block";
+                    
+                    document.getElementsByClassName('canvas')[0].style.display = "none";
                     
                   
                     leaderBoard[10].value = state.score;
-                    var el = document.getElementById('one');
-                    el.innerHTML = leaderBoard[10].name + " - " + leaderBoard[10].value;
-                    console.log(leaderBoard[10].name + " - " + leaderBoard[10].value);
-                    document.body.innerHTML(el);
                     state.score = 0;
+                    var one = document.getElementById('one');
+                    var two = document.getElementById('two');
+                    var three = document.getElementById('three');
+                    var four = document.getElementById('four');
+                    var five = document.getElementById('five');
+                    var six = document.getElementById('six');
+                    var seven = document.getElementById('seven');
+                    var eight = document.getElementById('eight');
+                    var nine = document.getElementById('nine');
+                    var ten = document.getElementById('ten');
+                    leaderBoard.sort(function (a, b) {
+                        if (a.value > b.value) {
+                          return 1;
+                        }
+                        if (a.value < b.value) {
+                          return -1;
+                        }
+                        return 0;
+                      });
+                    if(leaderBoard[0].value != 999999){
+                        document.getElementsByClassName('one')[0].style.display = "block";
+                        one.innerHTML = leaderBoard[0].name + " - " + leaderBoard[0].value;
+                       
+                      
+                     }
+                     if(leaderBoard[1].value != 999999){
+                        document.getElementsByClassName('two')[0].style.display = "block";
+                        two.innerHTML = leaderBoard[1].name + " - " + leaderBoard[1].value;
+                        
+                     }
+                     if(leaderBoard[2].value != 999999){
+                        document.getElementsByClassName('three')[0].style.display = "block";
+                        three.innerHTML = leaderBoard[2].name + " - " + leaderBoard[2].value;
+                       
+                     }
+                     if(leaderBoard[3].value != 999999){
+                        document.getElementsByClassName('four')[0].style.display = "block";
+                        four.innerHTML = leaderBoard[3].name + " - " + leaderBoard[3].value;
+                       
+                     }
+                     if(leaderBoard[4].value != 999999){
+                        document.getElementsByClassName('five')[0].style.display = "block";
+                        five.innerHTML = leaderBoard[4].name + " - " + leaderBoard[4].value;
+                        
+                     }
+                     if(leaderBoard[5].value != 999999){
+                        document.getElementsByClassName('six')[0].style.display = "block";
+                        six.innerHTML = leaderBoard[5].name + " - " + leaderBoard[5].value;
+                      
+                     }
+                     if(leaderBoard[6].value != 999999){
+                        document.getElementsByClassName('seven')[0].style.display = "block";
+                        seven.innerHTML = leaderBoard[6].name + " - " + leaderBoard[6].value;
+                       
+                     }
+                     if(leaderBoard[7].value != 999999){
+                        document.getElementsByClassName('eight')[0].style.display = "block";
+                        eight.innerHTML = leaderBoard[7].name + " - " + leaderBoard[7].value;
+                      
+                     }
+                     if(leaderBoard[8].value != 999999){
+                        document.getElementsByClassName('nine')[0].style.display = "block";
+                        nine.innerHTML = leaderBoard[8].name + " - " + leaderBoard[8].value;
+                       
+                     }
+                     if(leaderBoard[9].value != 999999){
+                        document.getElementsByClassName('ten')[0].style.display = "block";
+                        ten.innerHTML = leaderBoard[9].name + " - " + leaderBoard[9].value;
+                       
+                     }
+                    
+                    
+                    
                     
                    
                 }
