@@ -1,0 +1,63 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+h2{
+margin-top: 30px;
+display: block;
+text-align: center;
+}
+.container{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.item{
+    width: 50px;
+    height: 150px;
+    background-color: magenta;
+}
+.item1{
+    width: 50px;
+    height: 100px;
+    background-color: blue;
+}
+
+.another{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction:row;
+}
+
+.marger{
+    width: 50px;
+    height: 150px;
+    background-color: red;
+    margin: 5%;
+}
+
+.last{
+  
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+   
+}
+.lastitem{
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+    
