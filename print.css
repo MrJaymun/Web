@@ -27,7 +27,7 @@
         */
        
         .upmenu{
-            display: flex;
+            display: none;
         }
         .creator{
             width: 14cm;

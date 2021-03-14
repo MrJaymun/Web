@@ -19,7 +19,12 @@ body{
     justify-content: center;
     text-align: center;
 }
-
+.topic{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
 .text{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
