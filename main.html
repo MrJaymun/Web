@@ -11,32 +11,48 @@
 </head>
 
 <body>
-    <div class="container">
-       
-        <div class="menu">
-            <h1 class="logo">Подводный мир</h1>
-             <form  name="username">
-            <input type="text" name="nameUser" id="elem1">
-            <button name="button"type="submit" id="submit" class="button" disabled> Начать игру </button>
-             </form>
-             <h1 class="lead">Таблица лидеров</h1>
-
-             <h3 class="one" id="one"> Помогите</h3>
-             <h3 class="two" id="two"> Помогите</h3>
-             <h3 class="three" id="three"> Помогите</h3>
-             <h3 class="four" id="four"> Помогите</h3>
-             <h3 class="five" id="five"> Помогите</h3>
-             <h3 class="six" id="six"> Помогите</h3>
-             <h3 class="seven" id="seven"> Помогите</h3>
-             <h3 class="eight" id="eight"> Помогите</h3>
-             <h3 class="nine" id="nine"> Помогите</h3>
-             <h3 class="ten" id="ten"> Помогите</h3>
-    
-             
+    <div class="game">
+        <div class="info">
+            <div class="timer-box">
+                <div class="timer">
+                    <ul class="flex">
+                        <li id="hour"></li>
+                        <li id="minutes"></li>
+                        <li id="seconds"></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <button id="pause" class="pause"> Пауза </button>
+            <div id="result" class="result"></div>
+            <div id="nickname" class="nickname"></div>
         </div>
-        <canvas class="canvas" id="canvas" width="500" height="500"></canvas>
-        <div id="result"></div>
+        <div class="container">
+       
+            <div class="menu">
+                <h1 class="logo">Подводный мир</h1>
+                <form  name="username">
+                <input type="text" name="nameUser" id="elem1">
+                <button name="button"type="submit" id="submit" class="button" disabled> Начать игру </button>
+                </form>
+                <h1 class="lead">Таблица лидеров</h1>
+                <h3 class="one" id="one"> Помогите</h3>
+                <h3 class="two" id="two"> Помогите</h3>
+                <h3 class="three" id="three"> Помогите</h3>
+                <h3 class="four" id="four"> Помогите</h3>
+                <h3 class="five" id="five"> Помогите</h3>
+                <h3 class="six" id="six"> Помогите</h3>
+                <h3 class="seven" id="seven"> Помогите</h3>
+                <h3 class="eight" id="eight"> Помогите</h3>
+                <h3 class="nine" id="nine"> Помогите</h3>
+                <h3 class="ten" id="ten"> Помогите</h3>
+            </div>
+            <canvas class="canvas" id="canvas" width="500" height="500"></canvas>
+           
+        </div>
     </div>
+   
+   
 
 
     <script src="training.js"></script>
