@@ -173,7 +173,19 @@ p::selection, button::selection, div::selection, a::selection{
     font-size: 40px;
 }
 
+.loginbutton:hover{
+transition: 1500ms;
+background-color: white;
+}
 
+.groupname:hover{
+    transition: 1500ms;
+    font-size: 60px;
+}
+
+.creatorname:hover{
+    transform: rotate(180deg);
+}
 
 
 A:link { text-decoration: none; }
@@ -184,7 +196,52 @@ A:hover {
      color: red; 
 } 
 
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+}
+.navbar div{
+    margin-left: 30px;
+    width: 180px;
+    height: 70px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.navbar p{
+    font-size: 30px;
+    padding: 0;
+    margin-top: 10%;
+    vertical-align: center;
+    text-align: center;
+}
 
+.navbar div:hover{
+    background-color: white;
+}
+
+.helper{
+    width: 150px;
+    height: 50px;
+    margin: 50px;
+    background-color: white;
+    border: 1px solid blue;
+    text-align: center;
+    display: block;
+}
+
+.result{
+    margin-left: 50px;
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    padding-top: 30px;
+    background-color: white;
+    border: 1px solid blue;
+    text-align: center;
+
+}
 
 @media(max-width: 1350px){
     .register{
