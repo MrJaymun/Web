@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>Форма</title>
+</head>
+<body>
+    <div class="register">
+        <form method="POST">
+            <p>Введите IP-адрес:</p>
+            <p><input name="name" pattern="^[А-Яа-яЁё\s]+$" required>Имя</p>
+            <p><input name="surname" pattern="^[А-Яа-яЁё\s]+$" required>Фамилия</p>
+            <p><input name="phone" pattern="^[ 0-9]+$" required>Номер телефона</p>
+            <p><input name="email" required>E-mail</p>
+            <p><input name="gender">Пол</p>
+            <p><input name="birthday">Дата рождения</p>
+            <p><input class="registerbutton" type="submit" value="Отправить" ></form><p>
+        </form>
+    </div>
+   
+</body>
+</html>
