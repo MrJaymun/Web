@@ -3,7 +3,11 @@ body{
     margin: 0;
     padding: 0;
     background-color: lightgreen;
-   
+    
+}
+p::selection, button::selection, div::selection, a::selection{
+    color: blue;
+    background-color: wheat;
 }
 
 
@@ -43,7 +47,7 @@ body{
     grid-row: 1;
    
 }
-.logo img{
+.logo svg{
     width: 25%;
     height: 100%;
 }
@@ -71,7 +75,7 @@ body{
     display: flex;
     text-align: center;
     vertical-align: center;
-    font-size: 22px;
+    font-size: 18px;
     
 }
 .login div{
@@ -87,7 +91,7 @@ body{
 }
 .loginbutton{
     width: 50%;
-    height: 60px;
+    height: 80px;
     margin-top: 10px;
     background-color: yellowgreen;
    
@@ -136,6 +140,42 @@ body{
     margin-left: 10%;
    
 }
+
+.history{
+    grid-column: 1;
+    grid-row: 3/7 ;
+  
+}
+.rules{
+    grid-column: 4;
+    grid-row: 3/7 ;
+    
+}
+.big{
+    font-size: 48px;
+    color: red;
+    text-align: center;
+}
+.small{
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+.screenshots{
+    grid-column: 2/4 ;
+    grid-row: 8 ;
+}
+.screenshots p{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
 A:link { text-decoration: none; }
 A:visited { text-decoration: none; }
 A:active { text-decoration: none; }
@@ -143,6 +183,7 @@ A:hover {
      text-decoration: underline ; 
      color: red; 
 } 
+
 
 
 @media(max-width: 1350px){
