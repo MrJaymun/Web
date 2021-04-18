@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #fafafa;
 }
 
@@ -81,7 +81,7 @@ body {
     align-items: center;
     font-size: 20px;
     font-weight: 500px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #00A0C1;
     background-color: white;
     margin-right: 30px;
@@ -102,11 +102,12 @@ body {
     justify-content: space-between;
     height: 210px;
     display: flex;
+    grid-gap: 30px;
 }
 
 .headerblockelement {
     width: 32%;
-    height: 100%;
+    min-height: 210px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding-bottom: 15px;
@@ -117,7 +118,7 @@ body {
 }
 
 .headermarginer {
-    margin: 10px 20px 10px 20px;
+    margin: 35px 40px 35px 40px;
 }
 
 .uppersvg path {
@@ -128,12 +129,14 @@ body {
     font-size: 24px;
     font-weight: 900;
     color: #252B42;
+    margin: 10px 0;
 }
 
 .headerblocksmalltext {
     font-size: 14px;
     width: 230px;
     color: #737373;
+    margin: 0;
 }
 
 .headerblockelement:hover {
@@ -156,12 +159,107 @@ body {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     grid-row-gap: 30px;
-    width: 74%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
     margin-top: 60px;
 }
+
+
+/* ----------   practice   ---------- */
+
+.practice {
+    padding-top: 30px;
+}
+
+.wrapper {
+    margin: 5% 13% 0 13%;
+}
+
+.practice_title {
+    text-align: center;
+    max-width: 470px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    padding: 45px 0;
+}
+
+.practice_title_large {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 0;
+}
+
+.practice_title_small {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0;
+}
+
+.practice_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    grid-gap: 30px;
+}
+
+.practice_card {
+    min-height: 340px;
+    display: grid;
+    background-color: white;
+    justify-self: center;
+}
+
+.practice_card_text {
+    padding: 30px;
+    display: grid;
+    grid-gap: 15px;
+}
+
+.practice_card_text p {
+    margin: 0;
+}
+
+.practice_card_title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.practice_card_description {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.practice_card_img {
+    width: 100%;
+    align-self: flex-end;
+    height: 138px;
+}
+
+
+/* ----------   hider   ---------- */
 
 .mainblock {
     margin-top: 100px;
@@ -179,6 +277,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 0;
 }
 
 .choosesecond {
@@ -358,10 +457,12 @@ svg {
 .touch-block {
     background-color: #F3F3F3;
     padding-bottom: 150px;
+    padding-top: 50px;
+    margin-top: 20px;
 }
 
 .touch-block-container {
-    margin: 6% 13% 0 13%;
+    margin: 70px 13% 0 13%;
 }
 
 .touch-block .choosesecond {
@@ -373,7 +474,7 @@ svg {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .touch-card {
@@ -431,7 +532,7 @@ svg {
 }
 
 .consulting-title p {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -442,7 +543,7 @@ svg {
 }
 
 .consulting-text p {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -497,7 +598,7 @@ svg {
 
 .contacts-block-title,
 .contacts-list li {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -554,7 +655,7 @@ svg {
 }
 
 .header-text {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -633,6 +734,13 @@ svg {
         justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .practice_cards {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+        justify-content: center;
     }
 }
 
@@ -787,6 +895,12 @@ svg {
     }
     .block-form-item button {
         width: 30%;
+    }
+    .touch-block {
+        margin-top: 0;
+    }
+    .touch-block-container {
+        margin-top: 10px;
     }
 }
 
