@@ -1,0 +1,85 @@
+@use 'watch' as w;
+@use 'sass:color';
+@use 'sass:map';
+
+$back-color: yellow;
+$text-color: darkblue;
+$text-size: 30px;
+
+body{
+  font-size: $text-size;
+}
+
+.variable p{
+  background-color: $back-color;
+  color: $text-color;
+}
+
+
+.first-rule{
+  background-color: red;
+  &:hover{
+    background-color: yellowgreen;
+  }
+}
+.second-rule{
+  background-color: maroon;
+}
+.second-rule > p{
+  background-color: magenta;
+}
+.second-rule + p{
+  background-color: mediumaquamarine;
+}
+
+@mixin mixin-block{
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  border: 10px red solid;
+}
+
+.mix{
+  @include mixin-block();
+}
+
+%extend-block{
+  background-color: black;
+  color: white;
+ 
+  border: 10px red solid;
+}
+
+.extend{
+  @extend %extend-block;
+}
+
+.use{
+  background-color: w.$color;
+  color: white;
+}
+
+$width: 500px;
+
+.calc{
+  width: $width*2;
+  background-color: lightblue;
+  height: $width/5;
+}
+
+$new-color: color.adjust(darkblue, $red: 100);
+
+.colorer{
+  background-color: $new-color;
+  color: white;
+}
+
+$back-colors:(
+  "lion": yellow,
+  "fish": blue,
+  "cat": grey
+);
+ 
+.mapper{
+  background-color: map.get($back-colors, "lion");
+}
