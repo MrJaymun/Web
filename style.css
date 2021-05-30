@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: darkblue;
+    background-color: wheat;
+}
+
+.adaptive-menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10% 10px 10%;
+}
+
+.adaptive-menu div{
+display: flex;
+
+}
+.adaptive-menu div button{
+   
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+   
+}
+
+.adaptive-menu div p{
+    margin: 0 auto;
+    margin-top: 1%;
+   
+}
+
+.small-words-button{
+    font-size: 1rem;
+}
+.medium-words-button{
+    font-size: 1.5rem;
+}
+.huge-words-button{
+    font-size: 2rem;
+}
+
+.small-words{
+    font-size: 1rem;
+}
+.medium-words{
+    font-size: 1.5rem;
+}
+.huge-words{
+    font-size: 2rem;
+}
+
+.small-button{
+    font-size: 1rem;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.medium-button{
+    font-size: 1.5rem;
+    height: 40px;
+    padding-top: 15px;}
+.huge-button{
+    font-size: 2rem;
+    height: 50px;
+    padding-top: 20px;
+}
+
+
+
+.usual-colors{
+    color: darkblue;
+    background-color: wheat;
+}
+.white-colors{
+    color: black ;
+    background-color: white;
+}
+.black-colors{
+    color: white;
+    background-color: black;
+}
+
+.button{
+    margin: 10px;
+   width: 20%;
+   
+   border: 3px solid blue;
+    text-decoration: none;
+   
+ 
+}
+.upmenu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+}
+.topic{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px 50px;
+    text-indent: 50px;
+    text-align: justify;
+}
+.creator{
+   display: block;
+   margin: auto;
+   width: 600px;
+   height: 700px;
+}
+.name{
+    
+    text-align: center;
+    
+    margin-top: -1px;
+}
+
+.jquery{
+    display: block;
+   margin: auto;
+   text-align: center;
+}
+
+.github{
+    display: block;
+   margin: auto;
+   text-align: center;
+   font-size: 24px;
+   font-weight: 900;
+}
+
+@media(max-width: 1000px){
+    .upmenu{
+        flex-direction: column;
+    }
+    .button{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .text{
+        text-align: center;
+        text-indent: 20px;
+        padding: 5px 20px;
+    }
+    .adaptive-menu{
+        display: block;
+       margin-top: 10px; 
+       
+        
+    }
+    
+    
+}
+@media(max-width: 600px){
+    .creator{
+    width: 320px;
+    height: 400px;
+    }
+    .github{
+        font-size: 16px;
+    }
+}
+
+
