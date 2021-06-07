@@ -68,6 +68,7 @@ display: flex;
 
 
 
+
 .usual-colors{
     color: darkblue;
     background-color: wheat;
@@ -121,6 +122,11 @@ display: flex;
     text-align: center;
     
     margin-top: -1px;
+}
+
+.button-jquery{
+    justify-content: center;
+    text-align: center;
 }
 
 .jquery{
